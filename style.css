@@ -11,9 +11,6 @@
 *{
     font-family: Poppins-Regular;
 }
-h1{
-    font-family: Poppins-Bold;
-}
 a{
     font-family: Poppins-Regular;
     text-decoration: none;
@@ -21,6 +18,7 @@ a{
 p{
     font-family: Poppins-Regular;
     line-height: 1.5rem;
+    color: #bab6b6;
 }
 ul{
     padding: 0;
@@ -236,3 +234,800 @@ ul li{
     font-size: 14px;
     color: #bab6b6;
 }
+
+/* -----------------------------------------------------480px SideMenuBar Responsive--------- */
+@media all and (max-width: 480px){
+    #SideMenuBar{
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: -100vh;
+        background:#fff;
+        transition: all 0.5s;
+    }
+    #SideMenuBar.active{
+        top: 0px;
+    }
+    .SideMenuBar-ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .SideMenuBar-ul.two{
+        margin-top: 20px;
+    }
+    #SideMenuBar ul li{
+        margin: 10px 5px;
+        font-size: 14px;
+    }
+    #SideMenuBar ul li a{
+        color: black;
+    }
+    #SideMenuBar p a{
+        margin: 10px 5px;
+        font-size: 14px;
+        color: #bab6b6;
+    }
+}
+
+
+
+/* <!-- ////////////////////////////////////////////////////////////Spotlight-------------------------------- --> */
+#Spotlight{
+    margin-top: 100px;
+}
+.wrapper.Spotlight{
+    display: flex;
+    justify-content: space-between;
+}
+.Spotlight-left{
+    width: 50%;
+}
+.Spotlight-left-content{
+    width: 70%;
+    background: #fff;
+    margin: 180px 0 0 100px ;
+}
+.Spotlight-left h1{
+    font-size: 40px;
+    width: 85%;
+    line-height: 3rem;
+}
+.Spotlight-left p{
+    width: 85%;
+    font-size: 15px;
+}
+.black-button{
+    background: #000;
+    padding: 13px 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+}
+.Spotlight-left-content-bottom{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+}
+.Spotlight-three-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 40%;
+}
+.three-line{
+    content: "";
+    background: #000;
+    height: 2px;
+    width: 20%;
+}
+.three-line.orange{
+    content: "";
+    background: #f8a603;
+    width: 45%;
+}
+
+.arrow-box{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background: #fff;
+    margin: 10px 0 auto auto;
+}
+.arrow-white-box{
+    background: #fff;
+    padding: 10px 15px;
+    border: .25px solid #bab6b6;
+}
+.reverse-arrow{
+    rotate: 180deg;
+}
+
+
+
+.Spotlight-right{
+    width: 50%;
+    display: block;
+}
+.Spotlight-img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.Spotlight-right-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Spotlight-right-bottom p{
+    font-size: 13px;
+    font-weight: 600;
+    width: 70%;
+}
+.Spotlight-right-bottom span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.Spotlight-right-bottom span img{
+    width: 12px;
+    height: 12px;
+}
+
+
+/* -----------------------------------------------------1280px Spotlight Responsive--------- */
+@media all and (max-width: 1280px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left-content{
+        width: 70%;
+        background: #fff;
+        margin: 180px 0 0 100px ;
+    }
+    .Spotlight-left h1{
+        font-size: 40px;
+        width: 85%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 85%;
+        font-size: 15px;
+    }
+    .black-button{
+        background: #000;
+        padding: 13px 30px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    
+    
+    .Spotlight-right{
+        width: 50%;
+        display: block;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 13px;
+        font-weight: 600;
+        width: 70%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 12px;
+        height: 12px;
+    }
+}
+/* -----------------------------------------------------980px Spotlight Responsive--------- */
+@media all and (max-width: 980px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left-content{
+        width: 70%;
+        background: #fff;
+        margin: 70px 0 0 100px ;
+    }
+    .Spotlight-left h1{
+        font-size: 36px;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .black-button{
+        background: #000;
+        padding: 13px 30px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .arrow-white-box img{
+        width: 13px;
+        height: 13px;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    
+    
+    .Spotlight-right{
+        width: 50%;
+        display: block;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 11px;
+        font-weight: 600;
+        width: 70%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 10px;
+        height: 10px;
+    }
+}
+/* -----------------------------------------------------768px Spotlight Responsive--------- */
+@media all and (max-width: 768px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left-content{
+        width: 70%;
+        background: #fff;
+        margin: auto ;
+    }
+    .Spotlight-left h1{
+        font-size: 30px;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 100%;
+        font-size: 11px;
+    }
+    .black-button{
+        background: #000;
+        padding: 13px 30px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .arrow-white-box img{
+        width: 13px;
+        height: 13px;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    
+    
+    .Spotlight-right{
+        width: 50%;
+        display: block;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 11px;
+        font-weight: 600;
+        width: 70%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 10px;
+        height: 10px;
+    }
+}
+/* -----------------------------------------------------640px Spotlight Responsive--------- */
+@media all and (max-width: 640px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left-content{
+        width: 70%;
+        background: #fff;
+        margin: auto ;
+    }
+    .Spotlight-left h1{
+        font-size: 25px;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 100%;
+        font-size: 8px;
+    }
+    .black-button{
+        background: #000;
+        padding: 10px 25px;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .arrow-white-box img{
+        width: 11px;
+        height: 11px;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    .Spotlight-right{
+        width: 50%;
+        display: block;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 9px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 10px;
+        height: 10px;
+    }
+}
+/* -----------------------------------------------------480px Spotlight Responsive--------- */
+@media all and (max-width: 480px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Spotlight-left{
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-left-content{
+        width: 90%;
+        background: #fff;
+        margin: auto ;
+    }
+    .Spotlight-left h1{
+        font-size: 25px;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 100%;
+        font-size: 8px;
+    }
+    .black-button{
+        background: #000;
+        padding: 10px 25px;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .arrow-white-box img{
+        width: 11px;
+        height: 11px;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    .Spotlight-right{
+        width: 90%;
+        margin: 20px  auto;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 9px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 10px;
+        height: 10px;
+    }
+}
+/* -----------------------------------------------------360px Spotlight Responsive--------- */
+@media all and (max-width: 360px){
+    #Spotlight{
+        margin-top: 100px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Spotlight-left{
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-left-content{
+        width: 90%;
+        background: #fff;
+        margin: auto ;
+    }
+    .Spotlight-left h1{
+        font-size: 25px;
+        width: 100%;
+        line-height: 3rem;
+    }
+    .Spotlight-left p{
+        width: 100%;
+        font-size: 8px;
+    }
+    .black-button{
+        background: #000;
+        padding: 10px 25px;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 600;
+        border: none;
+    }
+    .Spotlight-left-content-bottom{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Spotlight-three-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 40%;
+    }
+    .three-line{
+        content: "";
+        background: #000;
+        height: 2px;
+        width: 20%;
+    }
+    .three-line.orange{
+        content: "";
+        background: #f8a603;
+        width: 45%;
+    }
+    
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: #fff;
+        margin: 10px 0 auto auto;
+    }
+    .arrow-white-box{
+        background: #fff;
+        padding: 10px 15px;
+        border: .25px solid #bab6b6;
+    }
+    .arrow-white-box img{
+        width: 11px;
+        height: 11px;
+    }
+    .reverse-arrow{
+        rotate: 180deg;
+    }
+    
+    .Spotlight-right{
+        width: 90%;
+        margin: 20px  auto;
+    }
+    .Spotlight-img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-right-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Spotlight-right-bottom p{
+        font-size: 9px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .Spotlight-right-bottom span{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Spotlight-right-bottom span img{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
